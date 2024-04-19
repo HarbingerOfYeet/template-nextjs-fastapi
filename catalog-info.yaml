@@ -9,7 +9,7 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: ${{ values.name | dump }}
     backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: vernaldev/${{ values.name }}
+    github.com/project-slug: vernaldev/${{ values.name | dump }}
 spec:
   type: service
   owner: ${{ values.owner | dump }}
